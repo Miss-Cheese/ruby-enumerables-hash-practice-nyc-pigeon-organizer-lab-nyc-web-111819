@@ -8,7 +8,8 @@ def nyc_pigeon_organizer(data)
 pigeon_hash = {}
 pigeon_array = []
   puts "1------------------------"
-  puts pigeon_array << data[:color][:purple]
+   pigeon_array << data[:color][:purple]
+   puts pigeon_array
   # puts data[:color][:grey]
   puts "2------------------------"
 end
