@@ -11,14 +11,10 @@ pigeon_hash = {}
 
 names_array = data[:color][:purple]
 
-index = 0
-while index < names_array.count do
-  pigeon_name = names_array[index]
+names_array.each  {|pigeon_name|
+pigeon_hash[pigeon_name] = {:color => ["purple"]}
+}
 
-  pigeon_hash[pigeon_name] = {:color => ["purple"]}
-
-  index += 1
-end
 
   puts "1------------------------"
   pp pigeon_hash
