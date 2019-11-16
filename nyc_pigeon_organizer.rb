@@ -7,6 +7,9 @@ pigeon_color(pigeon_hash, data[:color][:grey], "grey")
 pigeon_color(pigeon_hash, data[:color][:white], "white")
 pigeon_color(pigeon_hash, data[:color][:brown], "brown")
 
+pigeon_gender(pigeon_hash, data[:gender][:female], "female")
+pigeon_gender(pigeon_hash, data[:gender][:male], "male")
+
   puts "1------------------------"
   pp pigeon_hash
   puts "2------------------------"
