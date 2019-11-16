@@ -14,22 +14,6 @@ data[:lives].keys.each {|locale|
 pigeon_locale(pigeon_hash, data[:lives][locale], locale)
 }
 
-# pigeon_color(pigeon_hash, data[:color][:purple], "purple")
-# pigeon_color(pigeon_hash, data[:color][:grey], "grey")
-# pigeon_color(pigeon_hash, data[:color][:white], "white")
-# pigeon_color(pigeon_hash, data[:color][:brown], "brown")
-
-# pigeon_gender(pigeon_hash, data[:gender][:female], "female")
-# pigeon_gender(pigeon_hash, data[:gender][:male], "male")
-
-# pigeon_locale(pigeon_hash, data[:lives]["Subway"], "Subway")
-# pigeon_locale(pigeon_hash, data[:lives]["Central Park"], "Central Park")
-# pigeon_locale(pigeon_hash, data[:lives]["Library"], "Library")
-# pigeon_locale(pigeon_hash, data[:lives]["City Hall"], "City Hall")
-
-  puts "1------------------------"
-  pp pigeon_hash
-  puts "2------------------------"
 
   pigeon_hash
 end
