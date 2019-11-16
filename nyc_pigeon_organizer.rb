@@ -6,10 +6,11 @@ def nyc_pigeon_organizer(data)
   # assigned to arrays of info about that particular pigeon
 
 pigeon_hash = {}
-pigeon_array = []
+
   puts "1------------------------"
-   pigeon_array << data[:color][:purple]
-   puts pigeon_array
-  # puts data[:color][:grey]
+
+names_array = data[:color][:purple]
+puts names_array   
+
   puts "2------------------------"
 end
