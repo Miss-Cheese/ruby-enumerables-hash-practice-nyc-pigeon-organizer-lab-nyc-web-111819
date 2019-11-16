@@ -1,19 +1,18 @@
 def nyc_pigeon_organizer(data)
 
-pigeon_hash = {}
+  pigeon_hash = {}
 
-data[:color].keys.each {|color|
-pigeon_color(pigeon_hash, data[:color][color], color.to_s)
-}
+  data[:color].keys.each {|color|
+  pigeon_color(pigeon_hash, data[:color][color], color.to_s)
+  }
 
-data[:gender].keys.each {|gender|
-pigeon_gender(pigeon_hash, data[:gender][gender], gender.to_s)
-}
+  data[:gender].keys.each {|gender|
+  pigeon_gender(pigeon_hash, data[:gender][gender], gender.to_s)
+  }
 
-data[:lives].keys.each {|locale|
-pigeon_locale(pigeon_hash, data[:lives][locale], locale)
-}
-
+  data[:lives].keys.each {|locale|
+  pigeon_locale(pigeon_hash, data[:lives][locale], locale)
+  }
 
   pigeon_hash
 end
