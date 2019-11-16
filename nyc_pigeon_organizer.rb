@@ -21,8 +21,11 @@ names_array.each  {|pigeon_name|
 
   local_hash_value = pigeon_hash[pigeon_name]
   if local_hash_value == nil
+    local_hash_value = {}
+    pigeon_hash[pigeon_name] = local_hash_value
   end
-pigeon_hash[pigeon_name] = {:color => ["grey"]}
+
+  pigeon_hash[pigeon_name] = {:color => ["grey"]}
 }
 
   puts "1------------------------"
