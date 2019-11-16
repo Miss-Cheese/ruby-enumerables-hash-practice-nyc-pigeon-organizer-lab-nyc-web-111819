@@ -18,6 +18,8 @@ pigeon_locale(pigeon_hash, data[:lives]["City Hall"], "City Hall")
   puts "1------------------------"
   pp pigeon_hash
   puts "2------------------------"
+
+  pigeon_hash
 end
 
 
