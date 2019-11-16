@@ -2,10 +2,16 @@ def nyc_pigeon_organizer(data)
 
 pigeon_hash = {}
 
-pigeon_color(pigeon_hash, data[:color][:purple], "purple")
-pigeon_color(pigeon_hash, data[:color][:grey], "grey")
-pigeon_color(pigeon_hash, data[:color][:white], "white")
-pigeon_color(pigeon_hash, data[:color][:brown], "brown")
+data[:color].keys.each {|color|
+pigeon_color(pigeon_hash, data[:color][color], color.to_s)
+}
+
+
+
+# pigeon_color(pigeon_hash, data[:color][:purple], "purple")
+# pigeon_color(pigeon_hash, data[:color][:grey], "grey")
+# pigeon_color(pigeon_hash, data[:color][:white], "white")
+# pigeon_color(pigeon_hash, data[:color][:brown], "brown")
 
 pigeon_gender(pigeon_hash, data[:gender][:female], "female")
 pigeon_gender(pigeon_hash, data[:gender][:male], "male")
