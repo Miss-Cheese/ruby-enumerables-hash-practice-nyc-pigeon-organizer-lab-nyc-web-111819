@@ -45,10 +45,6 @@ def pigeon_gender(pigeon_hash, gender_array, gender)
       pigeon_hash[pigeon_name] = local_hash_value
     end
 
-    if !local_hash_value[:gender]
-      local_hash_value[:gender] = []
-    end
-
-    local_hash_value[:gender] << gender
+    local_hash_value[:gender] = [gender]
   }
 end
