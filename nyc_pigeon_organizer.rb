@@ -10,6 +10,10 @@ data[:gender].keys.each {|gender|
 pigeon_gender(pigeon_hash, data[:gender][gender], gender.to_s)
 }
 
+data[:lives].keys.each {|locale|
+pigeon_locale(pigeon_hash, data[:lives][locale], locale)
+}
+
 # pigeon_color(pigeon_hash, data[:color][:purple], "purple")
 # pigeon_color(pigeon_hash, data[:color][:grey], "grey")
 # pigeon_color(pigeon_hash, data[:color][:white], "white")
