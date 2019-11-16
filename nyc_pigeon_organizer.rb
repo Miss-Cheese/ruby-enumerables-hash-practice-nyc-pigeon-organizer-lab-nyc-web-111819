@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   # assigned to arrays of info about that particular pigeon
 
 pigeon_list = {}
-
+  puts "1------------------------"
   puts pigeon_data[:color][:purple]
+  puts "2------------------------"
 end
