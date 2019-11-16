@@ -8,5 +8,6 @@ def nyc_pigeon_organizer(data)
 pigeon_list = {}
   puts "1------------------------"
   puts data[:color][:purple]
+  puts data[:color][:grey]
   puts "2------------------------"
 end
