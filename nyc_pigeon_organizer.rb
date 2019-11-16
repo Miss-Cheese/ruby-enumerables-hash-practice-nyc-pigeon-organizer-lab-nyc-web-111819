@@ -23,17 +23,18 @@ def pigeon_color(pigeon_hash, color_name_array, color)
       pigeon_hash[pigeon_name] = local_hash_value
     end
 
-
     if !local_hash_value[:color]
       local_hash_value[:color] = []
     end
 
     local_hash_value[:color] << color
-
   }
+end
 
 
-  color_name_array.each  {|pigeon_name|
+def pigeon_gender(pigeon_hash, gender_array, gender)
+
+  gender_array.each  {|pigeon_name|
 
     local_hash_value = pigeon_hash[pigeon_name]
     if local_hash_value == nil
@@ -41,13 +42,10 @@ def pigeon_color(pigeon_hash, color_name_array, color)
       pigeon_hash[pigeon_name] = local_hash_value
     end
 
-
-    if !local_hash_value[:color]
-      local_hash_value[:color] = []
+    if !local_hash_value[:gender]
+      local_hash_value[:gender] = []
     end
 
-    local_hash_value[:color] << color
-
+    local_hash_value[:gender] << gender
   }
-
 end
