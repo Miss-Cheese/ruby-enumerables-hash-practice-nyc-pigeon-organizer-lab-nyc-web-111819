@@ -15,6 +15,11 @@ names_array.each  {|pigeon_name|
 pigeon_hash[pigeon_name] = {:color => ["purple"]}
 }
 
+names_array = data[:color][:grey]
+
+names_array.each  {|pigeon_name|
+pigeon_hash[pigeon_name] = {:color => ["grey"]}
+}
 
   puts "1------------------------"
   pp pigeon_hash
