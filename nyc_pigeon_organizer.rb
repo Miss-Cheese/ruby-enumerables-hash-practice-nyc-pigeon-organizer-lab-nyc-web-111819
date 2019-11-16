@@ -10,7 +10,12 @@ pigeon_hash = {}
   puts "1------------------------"
 
 names_array = data[:color][:purple]
-puts names_array   
+puts names_array
+
+index = 0
+while index < names_array.count do
+  names_array[index]
+end
 
   puts "2------------------------"
 end
