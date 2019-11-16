@@ -22,7 +22,7 @@ names_array.each  {|pigeon_name|
   end
 
 
-  if !local_hash_value{:color}
+  if !local_hash_value[:color]
     local_hash_value[:color] = []
   end
 
