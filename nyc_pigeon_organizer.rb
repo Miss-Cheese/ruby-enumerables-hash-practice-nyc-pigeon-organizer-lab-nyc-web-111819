@@ -20,7 +20,8 @@ names_array = data[:color][:grey]
 names_array.each  {|pigeon_name|
 
   local_hash_value = pigeon_hash[pigeon_name]
-  local_hash_value
+  if local_hash_value == nil
+  end
 pigeon_hash[pigeon_name] = {:color => ["grey"]}
 }
 
