@@ -15,6 +15,9 @@ puts names_array
 index = 0
 while index < names_array.count do
   pigeon_name = names_array[index]
+
+  pigeon_hash[pigeon_name] = {:color => ["purple"]}
+
   index += 1
 end
 
