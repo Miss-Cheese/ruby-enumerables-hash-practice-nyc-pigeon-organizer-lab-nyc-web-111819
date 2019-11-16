@@ -6,15 +6,17 @@ data[:color].keys.each {|color|
 pigeon_color(pigeon_hash, data[:color][color], color.to_s)
 }
 
-
+data[:gender].keys.each {|gender|
+pigeon_color(pigeon_hash, data[:gender][gender], gender.to_s)
+}
 
 # pigeon_color(pigeon_hash, data[:color][:purple], "purple")
 # pigeon_color(pigeon_hash, data[:color][:grey], "grey")
 # pigeon_color(pigeon_hash, data[:color][:white], "white")
 # pigeon_color(pigeon_hash, data[:color][:brown], "brown")
 
-pigeon_gender(pigeon_hash, data[:gender][:female], "female")
-pigeon_gender(pigeon_hash, data[:gender][:male], "male")
+# pigeon_gender(pigeon_hash, data[:gender][:female], "female")
+# pigeon_gender(pigeon_hash, data[:gender][:male], "male")
 
 pigeon_locale(pigeon_hash, data[:lives]["Subway"], "Subway")
 pigeon_locale(pigeon_hash, data[:lives]["Central Park"], "Central Park")
