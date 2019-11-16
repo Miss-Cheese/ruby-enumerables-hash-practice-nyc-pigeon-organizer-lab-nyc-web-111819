@@ -48,3 +48,18 @@ def pigeon_gender(pigeon_hash, gender_array, gender)
     local_hash_value[:gender] = [gender]
   }
 end
+
+
+def pigeon_locale(pigeon_hash, locale_array, locale)
+
+  locale_array.each  {|pigeon_name|
+
+    local_hash_value = pigeon_hash[pigeon_name]
+    if local_hash_value == nil
+      local_hash_value = {}
+      pigeon_hash[pigeon_name] = local_hash_value
+    end
+
+    local_hash_value[:lives] = [locale]
+  }
+end
