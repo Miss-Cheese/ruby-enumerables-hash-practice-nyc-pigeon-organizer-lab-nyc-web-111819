@@ -14,7 +14,8 @@ puts names_array
 
 index = 0
 while index < names_array.count do
-  names_array[index]
+  pigeon_name = names_array[index]
+  index += 1
 end
 
   puts "2------------------------"
