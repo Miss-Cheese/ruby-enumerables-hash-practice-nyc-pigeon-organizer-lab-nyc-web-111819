@@ -5,9 +5,10 @@ def nyc_pigeon_organizer(data)
   # Each of these hashes should have :color, :gender, and :lives keys
   # assigned to arrays of info about that particular pigeon
 
-pigeon_list = {}
+pigeon_hash = {}
+pigeon_array = []
   puts "1------------------------"
-  puts data[:color][:purple]
-  puts data[:color][:grey]
+  puts pigeon_array << data[:color][:purple]
+  # puts data[:color][:grey]
   puts "2------------------------"
 end
