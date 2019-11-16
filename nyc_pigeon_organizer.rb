@@ -25,8 +25,18 @@ names_array.each  {|pigeon_name|
     pigeon_hash[pigeon_name] = local_hash_value
   end
 
-  pigeon_hash[pigeon_name] = {:color => ["grey"]}
+  # local_hash_value = {:color => ["grey"]}
+
+  if !local_hash_value{:color}
+    local_hash_value[:color] = []
+  end
+
+  local_hash_value[:color] << "grey"
+
+
+
 }
+
 
   puts "1------------------------"
   pp pigeon_hash
