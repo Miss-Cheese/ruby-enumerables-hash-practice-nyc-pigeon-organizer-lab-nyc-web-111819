@@ -1,14 +1,10 @@
 def nyc_pigeon_organizer(data)
 
-
 pigeon_hash = {}
 
 pigeon_color(pigeon_hash, data[:color][:purple], "purple")
-
 pigeon_color(pigeon_hash, data[:color][:grey], "grey")
-
 pigeon_color(pigeon_hash, data[:color][:white], "white")
-
 pigeon_color(pigeon_hash, data[:color][:brown], "brown")
 
   puts "1------------------------"
