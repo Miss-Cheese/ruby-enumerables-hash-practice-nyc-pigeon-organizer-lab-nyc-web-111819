@@ -7,10 +7,9 @@ def nyc_pigeon_organizer(data)
 
 pigeon_hash = {}
 
-  puts "1------------------------"
+
 
 names_array = data[:color][:purple]
-puts names_array
 
 index = 0
 while index < names_array.count do
@@ -20,6 +19,9 @@ while index < names_array.count do
 
   index += 1
 end
+
+  puts "1------------------------"
+  pp pigeon_hash
 
   puts "2------------------------"
 end
