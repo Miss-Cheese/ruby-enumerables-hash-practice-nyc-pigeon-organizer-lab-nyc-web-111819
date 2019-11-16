@@ -7,7 +7,7 @@ pigeon_color(pigeon_hash, data[:color][color], color.to_s)
 }
 
 data[:gender].keys.each {|gender|
-pigeon_color(pigeon_hash, data[:gender][gender], gender.to_s)
+pigeon_gender(pigeon_hash, data[:gender][gender], gender.to_s)
 }
 
 # pigeon_color(pigeon_hash, data[:color][:purple], "purple")
